@@ -1,6 +1,5 @@
 import 'dart:io';
-
-import 'package:animasv/pages/welcome/welcome_page.dart';
+import 'package:animasv/route/router.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:liquid_glass_widgets/liquid_glass_setup.dart';
 import 'package:window_manager/window_manager.dart';
@@ -49,7 +48,9 @@ class MyApp extends StatelessWidget {
       theme: FluentThemeData.light(),
       darkTheme: FluentThemeData.dark(),
       title: "AniSV",
-      home: WelcomePage(),
+      //home: WelcomePage(),
+      initialRoute: "/welcome",
+      routes: getRootRoutes(),
     );
   }
 }

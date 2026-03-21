@@ -34,7 +34,12 @@ class _WelcomePageState extends State<WelcomePage> with WindowListener {
                       ),
                     ),
                     SizedBox(height: 20),
-                    FilledButton(child: Text("Enter"), onPressed: () {}),
+                    FilledButton(
+                      child: Text("Enter"),
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/home");
+                      },
+                    ),
                   ],
                 ),
               ),
